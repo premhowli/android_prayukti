@@ -16,7 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+//file downloading 
+ 
+ 
+ 
+ 
+ 
+ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -27,7 +33,9 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
+        function onDeviceReady() {
+    console.log(FileTransfer);
+    }
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
